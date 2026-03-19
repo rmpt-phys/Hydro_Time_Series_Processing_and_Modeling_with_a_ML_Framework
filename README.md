@@ -39,4 +39,12 @@ Collaborators that contributed with important codes, data and discussions:
 Contact emails: 
 rafael.mpt@gmail.com, santoslbl@gmail.com
 
+#### **Preparations for the complete execution of this notebook**
+
+The ML4FF framework and the needed data to reproduce the results presented and analyzed in this notebook can be obtained from the links below:
+
+https://zenodo.org/records/17654660
+
+https://github.com/jaqueline-soares/ML4FF-framework
+
 </div>
