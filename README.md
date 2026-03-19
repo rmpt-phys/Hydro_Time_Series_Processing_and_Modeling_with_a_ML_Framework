@@ -1,16 +1,22 @@
-<div style="max-width: 900px; text-align: justify;">
+### **Hydrometeorological Time-Series Processing and Flash-Flood Modeling Using a Cross-Validated ML Framework**
 
-#### **About this notebook**
+**About this repository:**
 
-A general notebook developed for reading, analyzing, pre-processing rain-gauge / river-stage data and flash-flood modeling with detailed analysis of performance and predictions of machine-leaning algorithms.<br> 
+This repository implements an end-to-end pipeline for reading, analyzing, and pre-processing rain-gauge and river-stage data, together with flash-flood modeling and performance evaluation of machine-learning algorithms. It summarizes a four-month research project developed at the National Center for Natural Disaster Monitoring and Alerts (*Centro Nacional de Monitoramento e Alertas de Desastres Naturais* - CEMADEN) by the author and collaborators.
 
-The notebook loads all station-separated files, aligns them on a unified 10-minute time grid, and inserts NaNs where measurements are missing. It then performs a set of analyses to extract and summarize key characteristics of the time series from each station. A curated collection of data frames is produced, including only stations that are active and meet predefined data-quality criteria.<br>
+The core component of the repository is the notebook *Project_Summary.ipynb*, which serves as a structured and self-contained guide covering the problem statement, motivation, a brief literature overview, and the adopted methodology. The workflow is organized into two main parts:
 
-River-stage records undergo a two-step pre-processing pipeline: first, outliers are identified and removed using the Hampel filter; second, a zero-phase low-pass filter is applied to obtain smooth, noise-reduced time series. Rainfall data are treated with a different procedure, appropriate for their discrete and event-driven nature.<br>
+- **Part 1**: Conversion of raw gauge measurements into unified hydrometeorological datasets, including data cleaning, filtering, temporal alignment, and preparation for modeling;
 
-The resulting processed rain-gauge and river-stage data are exported as well-structured CSV files, and dedicated training datasets are generated for use within the ML4FF framework. This notebook also provides a step-by-step guide for producing stage forecasting models with this framework and also for analyzing their performance and predictions.
+- **Part 2**: Flash-flood modeling using the ML4FF framework, including a step-by-step guide to configuring the auxiliary Python script *Run_ML4FF_Code.py* (input data definition, cross-validation setup, training/test splits, and output management), followed by a structured analysis of model performance and predictions.
 
-Code author:
+The notebook loads station-separated datasets, aligns them onto a unified 10-minute time grid, and explicitly handles missing data through NaN insertion. It then performs exploratory and statistical analyses to extract key time-series characteristics for each station, producing a curated collection of data frames restricted to stations that satisfy predefined activity and data-quality criteria.
+
+River-stage records are processed through a two-step pipeline: outlier detection and removal using the Hampel filter, followed by zero-phase low-pass filtering to obtain smooth, noise-reduced signals. Rainfall data are treated using a separate procedure tailored to their discrete and event-driven nature.
+
+The processed rain-gauge and river-stage datasets are exported as structured CSV files, and dedicated training datasets are generated for integration with the ML4FF framework. The repository also includes example results (*ML4FF_Results*) and provides a reproducible workflow for building forecasting models and rigorously evaluating their predictive performance.
+
+**Code author:**
 
 <pre>
 - Rafael Marques Paes Teixeira 
@@ -36,15 +42,12 @@ Collaborators that contributed with important codes, data and discussions:
 - Cristiano W. Eichholz      (0000-0001-7123-5438)
 </pre>
 
-Contact emails: 
-rafael.mpt@gmail.com, santoslbl@gmail.com
+Contact emails: rafael.mpt@gmail.com, santoslbl@gmail.com
 
-#### **Preparations for the complete execution of this notebook**
+#### **Preparations for the complete execution of this notebook:**
 
 The ML4FF framework and the needed data to reproduce the results presented and analyzed in this notebook can be obtained from the links below:
 
 https://zenodo.org/records/17654660
 
 https://github.com/jaqueline-soares/ML4FF-framework
-
-</div>
