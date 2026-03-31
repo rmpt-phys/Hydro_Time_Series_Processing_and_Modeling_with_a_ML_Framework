@@ -2,7 +2,7 @@
 
 **About this repository:**
 
-This repository implements an end-to-end pipeline for reading, analyzing, and pre-processing rain-gauge and river-stage data, together with flash-flood modeling and performance evaluation of machine-learning algorithms. It summarizes a four-month research project developed at the National Center for Natural Disaster Monitoring and Alerts (*Centro Nacional de Monitoramento e Alertas de Desastres Naturais* - CEMADEN) by the author and collaborators.
+This repository implements an end-to-end pipeline for reading, analyzing, and preprocessing rain-gauge and river-stage data, together with flash-flood modeling and performance evaluation of machine learning algorithms. It summarizes the main contributions of the author during a four-month research project carried out at the National Center for Natural Disaster Monitoring and Alerts (*Centro Nacional de Monitoramento e Alertas de Desastres Naturais* - CEMADEN), in collaboration with other researchers.
 
 The core component of the repository is the notebook *Project_Summary.ipynb*, which serves as a structured and self-contained guide covering the problem statement, motivation, a brief literature overview, and the adopted methodology. The workflow is organized into two main parts:
 
